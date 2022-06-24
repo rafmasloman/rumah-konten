@@ -1,7 +1,21 @@
 import React from 'react';
 import HeroImage from '../../illustration/hero-creative.svg';
-import Background from '../../img/bg.png';
+import VideoPicture from '../../img/video_pic.png';
 import Button from '../../components/button/button';
+import Control from '../../components/video-control/control';
+
+// ? Import Icons
+import PlusIcon from '../../icons/rumah-konten-icon/plus.svg';
+import CloseIcon from '../../icons/rumah-konten-icon/close.svg';
+import PauseIcon from '../../icons/rumah-konten-icon/pause.svg';
+import LikesIcon from '../../icons/rumah-konten-icon/likes.svg';
+import PlayIcon from '../../icons/rumah-konten-icon/play.svg';
+import CutIcon from '../../icons/rumah-konten-icon/cut.svg';
+import ResizeIcon from '../../icons/rumah-konten-icon/resize.svg';
+import SquareIcon from '../../icons/rumah-konten-icon/square.svg';
+import VisibleIcon from '../../icons/rumah-konten-icon/visible.svg';
+import SoundIcon from '../../icons/rumah-konten-icon/sound.svg';
+
 const home = () => {
   return (
     <div className="home container mx-auto  mt-24">
@@ -31,16 +45,45 @@ const home = () => {
         </div>
       </section>
 
-      <section className="highlight container mx-auto">
-        <div className="w-full relative">
-          <img
+      <section className="highlight container bg-background  bg-no-repeat bg-cover">
+        <div className="">
+          {/* <img
             src={Background}
             alt="Splash Background"
             className="object-cover w-full absolute"
-          />
+          /> */}
 
-          <div className="badge">
-            <span>#Highlight</span>
+          <div className="badge  text-center  font-roboto pt-52">
+            <span className="py-1.5 px-6 bg-highlight text-xl   font-bold text-blue-primary rounded-2xl">
+              #Highlight
+            </span>
+            <h5 className="title-hightlight text-5xl font-bold mt-5">
+              Lorem ipsum dolor sit <br /> amet, consectetur
+            </h5>
+
+            <p className="content-hightlight text-2xl text-content mt-3.5">
+              Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit ut
+            </p>
+          </div>
+
+          <div className="video-gallery flex justify-center relative  top-32">
+            <div className="container-image relative ">
+              <img src={VideoPicture} alt="Video Gallery" className="rounded" />
+              <div className="field-button bg-white px-6 pt-5 pb-6 opacity-80 h-fit shadow rounded-xl absolute top-24 -left-5">
+                <Control icon={PlayIcon} />
+                <Control icon={PauseIcon} />
+                <Control icon={PlusIcon} />
+                <Control icon={LikesIcon} />
+                <Control icon={CloseIcon} />
+              </div>
+              <div className="field-button bg-white px-6 pt-5 pb-6 opacity-80 h-fit shadow rounded-xl absolute bottom-24 -right-5">
+                <Control icon={VisibleIcon} />
+                <Control icon={SquareIcon} />
+                <Control icon={ResizeIcon} />
+                <Control icon={SoundIcon} />
+                <Control icon={CutIcon} />
+              </div>
+            </div>
           </div>
         </div>
       </section>

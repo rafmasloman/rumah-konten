@@ -7,6 +7,7 @@ module.exports = {
         'blue-primary': '#1537B6',
         'blue-brand': '#0A2178',
         'btn-primary': '#335EF7',
+        highlight: '#E3E9FF',
         content: '#8D94A6',
       },
     },
@@ -16,6 +17,9 @@ module.exports = {
     },
     borderWidth: {
       1: '1px',
+    },
+    backgroundImage: {
+      background: "url('./img/bg.png')",
     },
   },
   plugins: [],
