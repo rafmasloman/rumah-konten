@@ -9,6 +9,9 @@ module.exports = {
         'btn-primary': '#335EF7',
         highlight: '#E3E9FF',
         content: '#8D94A6',
+        card: '#1C3385',
+        'card-bg': '#F1F2F6',
+        'inner-circle': '#7291FF',
       },
     },
     fontFamily: {

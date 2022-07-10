@@ -2,7 +2,8 @@ import React from 'react';
 import HeroImage from '../../illustration/hero-creative.svg';
 import VideoPicture from '../../img/video_pic.png';
 import Button from '../../components/button/button';
-import Control from '../../components/video-control/control';
+import Icon from '../../components/icons/icon';
+import Card from '../../components/card/card';
 
 // ? Import Icons
 import PlusIcon from '../../icons/rumah-konten-icon/plus.svg';
@@ -70,21 +71,27 @@ const home = () => {
             <div className="container-image relative ">
               <img src={VideoPicture} alt="Video Gallery" className="rounded" />
               <div className="field-button bg-white px-6 pt-5 pb-6 opacity-80 h-fit shadow rounded-xl absolute top-24 -left-5">
-                <Control icon={PlayIcon} />
-                <Control icon={PauseIcon} />
-                <Control icon={PlusIcon} />
-                <Control icon={LikesIcon} />
-                <Control icon={CloseIcon} />
+                <Icon icon={PlayIcon} />
+                <Icon icon={PauseIcon} />
+                <Icon icon={PlusIcon} />
+                <Icon icon={LikesIcon} />
+                <Icon icon={CloseIcon} />
               </div>
               <div className="field-button bg-white px-6 pt-5 pb-6 opacity-80 h-fit shadow rounded-xl absolute bottom-24 -right-5">
-                <Control icon={VisibleIcon} />
-                <Control icon={SquareIcon} />
-                <Control icon={ResizeIcon} />
-                <Control icon={SoundIcon} />
-                <Control icon={CutIcon} />
+                <Icon icon={VisibleIcon} />
+                <Icon icon={SquareIcon} />
+                <Icon icon={ResizeIcon} />
+                <Icon icon={SoundIcon} />
+                <Icon icon={CutIcon} />
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="product mt-48 container px-32">
+        <div className="cards">
+          <Card number={1} text="Pilih Paket" />
         </div>
       </section>
     </div>
